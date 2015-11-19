@@ -1,0 +1,22 @@
+<h1>Welcome!</h1>
+<h3>Try a recipe below. Click on the links above for a quick search. Or look for a specific recipe with the search bar.</br> Click on a recipe to reveal its link. Enjoy!</h3>
+
+<selector-directive class="router-div" ng-repeat="item in homeResults">
+
+	<p>{{item.title}}</p>
+	<img class="router-img" ng-src="{{item.image_url}}" alt="app image">
+	</br>
+	<a class="is-hidden" href="{{item.source_url}}" >Go to recipe!</a>
+
+</selector-directive>
+
+<div ng-model="pages" class="page-bar">
+	<div>
+		<ul class="page-numbers">
+			<a href="#" ng-click="getHomeRecipes(one)">1</a>
+			<a href="#" ng-click="getHomeRecipes(two)">2</a>
+			<a href="#" ng-click="getHomeRecipes(three)">3</a>
+		</ul>
+	</div>
+</div>
+

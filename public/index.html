@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body ng-app="recipeApp">
+	
+	<div ng-controller="mainCtrl">
+
+		
+			<div class="jumbotron">
+
+				<a class="quick-links" ui-sref="home" ng-click="getHomeRecipes()">Home</a>
+				<a class="quick-links" ui-sref="appetizers" ng-click="getAppetizers()">Appetizers</a>
+				<a class="quick-links" ui-sref="dinners" ng-click="getDinners()">Dinners</a>
+				<a class="quick-links" ui-sref="desserts" ng-click="getDesserts()">Desserts</a>
+				<a class="quick-links" ui-sref="search">Search Results</a>
+
+				<form id="search" ng-submit="getSearch(one)">
+					<input id="searchbox" type="text" ng-model="searchBar" placeholder="Search by Name or Ingredient">
+					<button id="searchbutton" type="submit">Search Recipes</button>
+				</form>
+
+			</div>
+
+		<div class="container">
+			
+				<div ui-view></div>
+
+		</div>
+	
+	
+		<footer style="text-align: center">
+			Powered by</br>
+			<a href="food2fork.com" style="text-decoration: none; color: black" ><img src="http://food2fork.com/F2F/static/images/webLogo.png" alt="Food2Fork"></a>
+			</br>
+			Created by Dominique Liau
+		</footer>
+		
+
+		
+
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script src="app.js"></script>
+	<script src="mainCtrl.js"></script>
+	<script src="mainService.js"></script>
+	<script src="routers/dinners/dinnersCtrl.js"></script>
+	<script src="routers/dinners/dinnersService.js"></script>
+	<script src="routers/home/homeService.js"></script>
+	<script src="routers/home/homeCtrl.js"></script>
+	<script src="routers/desserts/dessertsService.js"></script>
+	<script src="routers/desserts/dessertsCtrl.js"></script>
+	<script src="routers/appetizers/appetizersService.js"></script>
+	<script src="routers/appetizers/appetizersCtrl.js"></script>
+	<script src="directives/selectorDirective.js"></script>
+	<script src=""></script>
+
+</body>
+</html>

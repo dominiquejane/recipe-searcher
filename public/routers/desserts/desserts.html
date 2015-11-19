@@ -1,0 +1,21 @@
+<h2>Dessert Ideas</h2>
+
+	
+<selector-directive class="router-div" ng-repeat="dessert in Desserts">
+	
+	<p>{{dessert.title}}</p>
+	<img class="router-img" ng-src="{{dessert.image_url}}" alt="app image">
+	</br>
+	<a class="is-hidden" href="{{dessert.source_url}}">Go to recipe!</a>
+
+</selector-directive>
+
+<div ng-model="pages" class="page-bar">
+	<div>
+		<ul class="page-numbers">
+			<a href="#" ng-click="getDesserts(one)">1</a>
+			<a href="#" ng-click="getDesserts(two)">2</a>
+			<a href="#" ng-click="getDesserts(three)">3</a>
+		</ul>
+	</div>
+</div>

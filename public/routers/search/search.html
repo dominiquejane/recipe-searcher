@@ -1,0 +1,25 @@
+<h2>Search Results</h2>
+
+<selector-directive class="router-div" ng-repeat="result in searchResults">
+
+	<p>{{result.title}}	</p>		
+	<img class="router-img" ng-src="{{result.image_url}}" alt="app image">
+	</br>
+	<a class="is-hidden" href="{{result.source_url}}">Go to recipe!</a>
+
+</selector-directive>
+
+<p ng-hide="searchResults.length" style="text-align: center; font-size: 20px">Oops! Nothing showed up. Try searching for something by using the search bar above. Or click on one of the links to the left.</p>
+
+<div ng-model="pages" class="page-bar">
+	<div>
+		<ul class="page-numbers">
+			<a href="#" ng-click="getSearch(one)">1</a>
+			<a href="#" ng-click="getSearch(two)">2</a>
+			<a href="#" ng-click="getSearch(three)">3</a>
+		</ul>
+	</div>
+</div>
+
+
+
