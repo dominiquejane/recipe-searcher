@@ -7,7 +7,7 @@ angular.module('recipeApp').controller('dessertsCtrl', function($scope, desserts
 	$scope.getDesserts = function(num) {
 		dessertsService.getDesserts(num).then(function(results) {
 			$scope.Desserts = results.data.recipes;
-			$state.go('desserts');
+			// $state.go('desserts');
 		}).catch(function(err) {
 			console.log(err);
 		});
