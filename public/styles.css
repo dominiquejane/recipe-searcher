@@ -1,76 +1,66 @@
 html {
-	background: url(http://1.bp.blogspot.com/-DshjrPWPCNk/VACDCLL6LOI/AAAAAAAACXs/GG7c1F98Wk8/s1600/barna5.png) no-repeat center center fixed;
+	/*background: url(../floral.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
+
 }
 
 h1 {
 	font-size: 65px;
-	color: #676350;
+	color: black;
+	font-family: 'Great Vibes', cursive;
+	margin: 0px;
 }
 
 h3{
-	color: #676350;
+	color: black;
 	font-size: 20px;
+	font-family: 'IM Fell English', serif;
+
 }
 
 
+@media screen and (max-width: 1004px) {
+	.thin-header{
+		font-size: 12px;
+	}
+}
 
-footer {
+
+.panel-footer {
 	width: 100%;
-	height: 80px;
-	background-color: #d7a087;
+	height:40px;
 	margin:0;
 	left: 0;
 	position: fixed;
 	bottom:0;
 	padding:5px;
 	font-size:20px;
-	color: #F5EBDD;
-}
-
-.jumbotron {
-	width: 100%;
-	min-width: 1085px;
-	height: 50px;
-	margin:0;
-	left: 0;
-	position: fixed;
-	top:0;
-	padding:5px;
-	background-color: #d7a087;
-	font-size:18px;
+	color: black;
 }
 
 .quick-links{
-	margin: 30px 10px;
-	color: #F5EBDD;
-}
-
-#search {
-	float: right;
-	margin-right: 80px;
-}
-
-#searchbox {
-	height: 35px;
-	width: 230px;
-	border-radius: 5px;
-	margin: 5px;
-	font-size:15px;
-}
-
-#searchbutton {
-	height: 30px;
-	width: 150px;
-	border-radius: 10px;
-	font-size: 15px;
+	font-family: 'IM Fell English', serif;
+	color: black;
 }
 
 .container {
-	margin-top: 60px;
-	margin-bottom: 70px;
+	margin-top: 20px;
 	text-align: center;
+}
+
+.title-floral {
+	background: url(../floral.jpg) no-repeat;
+	background-size:cover;
+	padding: 20px 10px;
+	margin-bottom: 10px;
+	color: black;
+	font-family: 'Great Vibes', cursive;
+	font-size:130px;
+}
+
+#searchbar{
+	width: 100px;
 }
 
 .router-div {
@@ -78,13 +68,17 @@ footer {
 	height: 300px;
 	font-size: 22px;
 	display: inline-block;
-	margin: 10px;
+	margin: 0;
 	padding: 0;
 	text-align: center;
-}
+	font-family: 'IM Fell English', serif;}
 
 .router-div a:link {
-	color: #f5ebdd;
+	color: #9D4050;
+
+}
+a:visited{
+	color: #9D4050;
 }
 
 .router-img {
@@ -94,23 +88,70 @@ footer {
 	text-align: center;
 }
 
+.header-blocks {
+	text-align:center;
+	vertical-align:middle;
+	-webkit-perspective:1000;
+    z-index:1;
+}
+
+.big-blocks {
+	height:250px;
+	width: 250px;
+	position:relative;
+	display: inline-block;
+	-webkit-box-sizing:border-box;
+	margin:0;
+	padding:0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transform-style: preserve-3d;}
+
+.big-blocks:hover{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+.front, .back {
+	width: 250px;
+	height: 250px;
+	/*backface-visibility:hidden;*/
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	/*backface-visibility:hidden;*/
+
+}
+
+.back {
+	transform: rotateY(180deg);
+	overflow:auto;
+	background-color:rgba(255,255,255,0.6);
+}
+
 h2 {
 	text-align: center;
 	font-size: 45px;
 	margin: 10px;
-	color: #676350;
+	color: black;
 	padding-top:15px;
+	font-family: 'IM Fell English', serif;
 }
 
 p {
-	height: 50px;
-	overflow: scroll;
+	height: 55px;
 	margin-bottom: 0px;
+	font-family: 'IM Fell English', serif;
 }
 
 a { 
 	text-decoration: none;
-	font-size: 25px;
 }
 
 .selected-recipe {

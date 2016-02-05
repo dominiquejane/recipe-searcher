@@ -15,4 +15,10 @@ angular.module('recipeApp').controller('homeCtrl', function($scope, homeService,
 
 	$scope.getHomeRecipes($scope.one);
 
+	$scope.showModal = false;
+
+  $scope.toggleModal = function(){
+    $scope.showModal = !$scope.showModal;
+  };
+
 });

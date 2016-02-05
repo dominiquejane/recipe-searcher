@@ -18,7 +18,6 @@ angular.module('recipeApp').controller('mainCtrl', function($scope, mainService,
 
 
 
-
 	// $scope.pages;
 	// $scope.show = 0; 
 	// $scope.pageToggle = function (pages) {

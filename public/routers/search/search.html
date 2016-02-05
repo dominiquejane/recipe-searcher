@@ -1,17 +1,30 @@
-<h2>Search Results</h2>
+<div class="container title-floral">
+	<div style="background-color:rgba(255,255,255,0.5); padding: 10px 0 0">
+		<h1><span style="font-size:130px">Search Results<span></h1>
+	</div>
+</div>
 
-<selector-directive class="router-div" ng-repeat="result in searchResults">
+<div class="router-div" ng-repeat="result in searchResults">
 
-	<p>{{result.title}}	</p>		
-	<img class="router-img" ng-src="{{result.image_url}}" alt="app image">
-	</br>
-	<a class="is-hidden" href="{{result.source_url}}">Go to recipe!</a>
+	<div class="header-blocks">
+		<div class="big-blocks">
+			<div class="front">
+				<img class="router-img" ng-src="{{result.image_url}}" alt="app image">
+			</div>
+			<div class="back">
+			</br>
+				<p>{{result.title}}</p>
+			</br>
+				<div style="font-size:18px">For recipe, click <a  href="{{result.source_url}}" >here! </a></div>
+			</div>
+		</div>
+	</div>
 
-</selector-directive>
+</div>
 
-<p ng-hide="searchResults.length" style="text-align: center; font-size: 20px">Oops! Nothing showed up. Try searching for something by using the search bar above. Or click on one of the links to the left.</p>
+<p ng-hide="searchResults.length" style="text-align: center; font-size: 20px">Oops! Nothing showed up. Try searching for something by using the search bar above. Or click on one of the links at the top.</p>
 
-<div ng-model="pages" class="page-bar">
+<div ng-model="pages" class="page-bar" ng-hide="!searchResults.length">
 	<div>
 		<ul class="page-numbers">
 			<a href="#" ng-click="getSearch(one)">1</a>
