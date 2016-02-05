@@ -8,8 +8,9 @@ angular.module('recipeApp').controller('mainCtrl', function($scope, mainService,
 	$scope.getSearch = function(num) {
 		// $scope.searchResults = {title: "Oops! Nothing showed up. Try searching for something by using the search bar above. Or click on one of the links to the left."};
 		mainService.getSearch($scope.searchBar, num).then(function(results) {
+			console.log(results.data.recipes);
 			$scope.searchResults = results.data.recipes;
-			// $state.go('search');
+			$state.go('search');
 		}).catch(function(err) {
 			console.log(err);
 		});
