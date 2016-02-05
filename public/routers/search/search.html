@@ -1,8 +1,9 @@
 <div class="container title-floral">
 	<div style="background-color:rgba(255,255,255,0.5); padding: 10px 0 0">
-		<h1><span style="font-size:130px">Search Results<span></h1>
+		<div>Search Results</div>
 	</div>
 </div>
+
 
 <div class="router-div" ng-repeat="result in searchResults">
 
@@ -15,7 +16,7 @@
 			</br>
 				<p>{{result.title}}</p>
 			</br>
-				<div style="font-size:18px">For recipe, click <a  href="{{result.source_url}}" >here! </a></div>
+				<div style="font-size:18px">For recipe, click <a  href="{{result.source_url}}" target="_blank">here! </a></div>
 			</div>
 		</div>
 	</div>
