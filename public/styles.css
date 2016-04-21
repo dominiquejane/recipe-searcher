@@ -110,9 +110,11 @@ a:visited{
 	padding:0;
 	-webkit-transition: -webkit-transform .2s ease-in-out;
 	transition: transform .2s ease-in-out;
-	transform-style: preserve-3d;}
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
 
-.big-blocks:hover{
+.big-blocks:focus{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
