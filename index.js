@@ -1,5 +1,4 @@
 
-
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -24,7 +23,7 @@ app.listen(port, function() {
 // });
 
 app.get('/api/recipes', function(req, res) {
-	console.log("req.query", req.query);
+  console.log("req.query", req.query);
   request({
     method: 'GET',
     url: 'http://food2fork.com/api/search?key=acad7af756569cadc835890eb19f2a57',

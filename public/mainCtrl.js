@@ -18,14 +18,14 @@ angular.module('recipeApp').controller('mainCtrl', function($scope, mainService,
 
 
 
-	// $scope.pages;
-	// $scope.show = 0; 
-	// $scope.pageToggle = function (pages) {
-	// 	$scope.show++;
-	// 	if ($scope.show > 0) {
-	// 		pages.removeClass('is-hidden');
-	// 		console.log($scope.show);
-	// 	}
-	// }
+	$scope.pages;
+	$scope.show = 0; 
+	$scope.pageToggle = function (pages) {
+		$scope.show++;
+		if ($scope.show > 0) {
+			pages.removeClass('is-hidden');
+			console.log($scope.show);
+		}
+	}
 
 }); 

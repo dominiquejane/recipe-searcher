@@ -3,6 +3,11 @@ angular.module('recipeApp', ['ui.router']).config(function($stateProvider, $urlR
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
+		// .state('home', {
+		// 	url: '/',
+		// 	templateUrl: 'templates/test.html',
+		// 	controller: 'controllers'
+		// })
 		.state('home', {
 			url: '/',
 			templateUrl: 'routers/home/home.html',
@@ -25,8 +30,8 @@ angular.module('recipeApp', ['ui.router']).config(function($stateProvider, $urlR
 		})
 		.state('search', {
 			url: '/searchResults',
-			templateUrl: 'routers/search/search.html',
-			controller: 'mainCtrl',
+			templateUrl: 'templates/test.html',
+			controller: 'controllers',
 		});
 
 });
