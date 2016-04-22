@@ -9,15 +9,22 @@
 
 	<div class="header-blocks">
 		<div class="big-blocks">
-			<div class="front">
-				<img class="router-img" ng-src="{{appetizer.image_url}}" alt="app image">
+			<div class="front" style="background: url({{appetizer.image_url}});">
+				<div style="background-color: rgba(0,0,0,0.4)">
+					</br>
+				<p><a  href="{{appetizer.source_url}}" target="_blank" >{{appetizer.title}}</a></p>
+				
+				</div>
+
+
+				<!-- <img class="router-img" ng-src="{{appetizer.image_url}}" alt="app image"> -->
 			</div>
-			<div class="back">
+			<!-- <div class="back">
 			</br>
 				<p>{{appetizer.title}}</p>
 			</br>
 				<div style="font-size:18px">For recipe, click <a  href="{{appetizer.source_url}}" target="_blank" >here! </a></div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 
