@@ -108,16 +108,16 @@ a:visited{
 	-webkit-box-sizing:border-box;
 	margin:0;
 	padding:0;
-	-webkit-transition: -webkit-transform .2s ease-in;
+/*	-webkit-transition: -webkit-transform .2s ease-in;
 	transition: transform .2s ease-in;
-	transform-style: preserve-3d;
+	transform-style: preserve-3d;*/
 	cursor: pointer;
 }
 
-.big-blocks:active{
+/*.big-blocks:active{
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-}
+}*/
 
 
 .front, .back {
@@ -130,14 +130,14 @@ a:visited{
 }
 
 .front {
-	z-index: 2;
-	transform: rotateY(0deg);
+/*	z-index: 2;
+	transform: rotateY(0deg);*/
 	/*backface-visibility:hidden;*/
 
 }
 
 .back {
-	transform: rotateY(180deg);
+/*	transform: rotateY(180deg);*/
 	overflow:auto;
 	background-color:rgba(255,255,255,0.6);
 }
