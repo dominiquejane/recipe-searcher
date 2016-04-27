@@ -30,7 +30,7 @@ angular.module('recipeApp', ['ui.router']).config(function($stateProvider, $urlR
 		})
 		.state('search', {
 			url: '/searchResults',
-			templateUrl: 'search/search.html',
+			templateUrl: 'routers/search/search.html',
 			controller: 'mainCtrl',
 		});
 
